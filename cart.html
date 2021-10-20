@@ -1,0 +1,13 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="md-arrow-round-back" color="dark"
+        [defaultHref]=" ['dashboard',globals.selectedBrand , globals.loggedInUser.storeNumber,this.globals.loggedInUser.employeeHash ].join('/')">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title (click)="goToDashboard()">
+      <img [src]="globals?.brandLogo" alt="brand logo" class='logo-img'>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
